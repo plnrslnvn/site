@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS в электронной коммерции</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Подключаем NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- мой css -->
+  <link rel="stylesheet" href="csscustom.css">
+</head>
+
+<body>
+  <header class="nes-container is-centered header-main">
+    <div class="header-main__logo nes-logo">
+      <span>CMS в электронной коммерции</span>
+    </div>
+
+    <nav class="nes-menu header-main__nav">
+      <button class="nes-menu-icon" aria-label="Открыть меню">
+        <span class="burger-lines">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+
+      <ul class="nes-menu-content header-main__links">
+        <li><a href="index.html" class="nes-btn is-normal">Главная</a></li>
+        <li><a href="woocommerce.html" class="nes-btn is-primary">WooCommerce</a></li>
+        <li><a href="shopify.html" class="nes-btn is-success">Shopify</a></li>
+        <li><a href="magento.html" class="nes-btn is-warning">Magento</a></li>
+        <li><a href="cms.html" class="nes-btn is-normal">Сравнение CMS</a></li>
+        <li><a href="security.html" class="nes-btn is-error">Безопасность</a></li>
+        <li><a href="seo.html" class="nes-btn is-primary">SEO и скорость загрузки</a></li>
+        <li><a href="case.html" class="nes-btn is-success">Кейсы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout-wrapper">
+    <!-- Сайдбар -->
+    <aside class="sidebar" aria-label="Навигация по странице">
+      <section class="sidebar__section">
+        <h3>Содержание страницы</h3>
+        <ul class="nes-list is-bulleted">
+          <li><a href="#description">Описание</a></li>
+          <li><a href="#target">Для кого подходит</a></li>
+          <li><a href="#wordpress">Интеграция с WordPress</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="main-content nes-container">
+      <section class="overview overview--cms">
+        <div class="overview__wrapper">
+          <div class="overview__text">
+            <h1>WooCommerce</h1>
+
+            <h2 id="description">Описание</h2>
+            <p>
+              WooCommerce — это плагин для WordPress, превращающий любой сайт на этой CMS в полноценный
+              интернет-магазин. Ядро плагина бесплатное, open-source, и на нём работает более 20% всех
+              онлайн-магазинов в мире. WooCommerce поддерживает простые и вариативные товары, цифровые
+              загрузки, групповые товары, внешние/партнёрские товары и подписки (через расширения).
+              Управление запасами, отзывы, рейтинги, уведомления о низком остатке — всё встроено в ядро.
+            </p>
+
+            <h2 id="target">Для кого подходит</h2>
+            <p>
+              WooCommerce оптимален для малого и среднего бизнеса, особенно если вы уже работаете на
+              WordPress или ваша стратегия опирается на контент-маркетинг и SEO. Платформа подходит
+              брендам, которым нужен контроль над каждой деталью магазина и которые готовы инвестировать
+              время в техническое обслуживание. Реалистичные расходы: $30–80/мес для базового магазина,
+              $100–200+/мес для продвинутой конфигурации с платными расширениями.
+            </p>
+
+            <h2 id="wordpress">Интеграция с WordPress</h2>
+            <p>
+              WooCommerce встроен в экосистему WordPress — самую популярную CMS в мире. Это значит, что
+              блог, лендинги, SEO-инструменты, медиатека и редактор контента работают в едином интерфейсе
+              с магазином. Контент-маркетинг и коммерция объединены: вы можете вести блог, публиковать
+              обзоры продуктов и направлять трафик прямо на витрину.
+            </p>
+          </div>
+
+          <div class="overview__img">
+            <img src="assets/woocommerce-sm.jpg"
+              srcset="assets/woocommerce-sm.jpg 480w, assets/woocommerce-md.jpg 768w, assets/woocommerce-lg.jpg 1200w"
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" alt="Интерфейс WooCommerce"
+              title="WooCommerce" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="nes-container is-centered footer-main">
+    <p>&copy; 2026 CMS E‑Commerce.</p>
+    <p>Контакты:</p>
+    <!-- gmail -->
+    <p><i class="nes-icon gmail is-large"></i>
+      kravchenko.polina@icloud.com </p>
+    <!-- github -->
+    <p><i class="nes-icon github is-large"></i> @plnrslnvn</p>
+  </footer>
+
+  <script src="jsmain.js"></script>
+</body>
+
+</html>

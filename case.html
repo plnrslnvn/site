@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS в электронной коммерции</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Подключаем NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- мой css -->
+  <link rel="stylesheet" href="csscustom.css">
+</head>
+
+<body>
+  <header class="nes-container is-centered header-main">
+    <div class="header-main__logo nes-logo">
+      <span>CMS в электронной коммерции</span>
+    </div>
+
+    <nav class="nes-menu header-main__nav">
+      <button class="nes-menu-icon" aria-label="Открыть меню">
+        <span class="burger-lines">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+
+      <ul class="nes-menu-content header-main__links">
+        <li><a href="index.html" class="nes-btn is-normal">Главная</a></li>
+        <li><a href="woocommerce.html" class="nes-btn is-primary">WooCommerce</a></li>
+        <li><a href="shopify.html" class="nes-btn is-success">Shopify</a></li>
+        <li><a href="magento.html" class="nes-btn is-warning">Magento</a></li>
+        <li><a href="cms.html" class="nes-btn is-normal">Сравнение CMS</a></li>
+        <li><a href="security.html" class="nes-btn is-error">Безопасность</a></li>
+        <li><a href="seo.html" class="nes-btn is-primary">SEO и скорость загрузки</a></li>
+        <li><a href="case.html" class="nes-btn is-success">Кейсы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout-wrapper">
+    <!-- Сайдбар -->
+    <aside class="sidebar" aria-label="Навигация по странице">
+      <section class="sidebar__section">
+        <h3>Содержание страницы</h3>
+        <ul class="nes-list is-bulleted">
+          <li><a href="#case-shopify">Кейс 1 — Shopify</a></li>
+          <li><a href="#case-wc">Кейс 2 — WooCommerce</a></li>
+          <li><a href="#case-magento">Кейс 3 — Magento</a></li>
+          <li><a href="#summary">Что общего у кейсов</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="nes-container is-rounded">
+      <h1 class="nes-title">Кейсы: как запускали магазины на разных CMS</h1>
+
+      <p>
+        Теория — это хорошо, но настоящий выбор CMS всегда упирается в конкретику:
+        бюджет, сроки, команда и ожидания по росту. Ниже — три реалистичных сценария,
+        в которых команды запускали интернет‑магазины на Shopify, WooCommerce и Magento.
+        Каждый кейс показывает, почему платформа подошла именно этому бизнесу
+        и на что пришлось пойти на компромисс.
+      </p>
+
+      <!-- Кейс 1: Shopify -->
+      <section id="case-shopify" style="margin-top: 2rem;">
+        <div class="nes-container is-rounded with-title" style="background-color: #fbe9ff;">
+          <p class="title">Кейс 1 — Shopify</p>
+          <h2>Магазин украшений ручной работы «Silverline»</h2>
+          <span class="nes-badge is-primary"><span class="dark">Shopify</span></span>
+          <span class="nes-badge is-success"><span class="dark">Запуск за 3 недели</span></span>
+
+          <p style="margin-top: 1rem;">
+            Silverline — небольшой бренд серебряных украшений ручной работы. Каталог
+            40 позиций, один мастер‑ювелир и менеджер по продажам. Команды разработчиков
+            нет, бюджет ограничен, нужно было запустить продажи до новогоднего сезона.
+          </p>
+          <p>
+            Выбрали Shopify Starter: ежемесячная подписка 29 долларов, бесплатная
+            тема, встроенная оплата через Shopify Payments. Весь запуск занял
+            три недели — оформление, загрузка каталога, настройка доставки
+            и интеграция с Instagram Shop. Никаких отдельных хостингов, SSL
+            и обновлений. Владелец смог сам добавлять новые изделия без помощи
+            программиста.
+          </p>
+
+          <div class="nes-container is-semi" style="margin-top: 1rem; background-color: #fff;">
+            <p><strong>Почему Shopify:</strong> нет технической команды, нужна скорость,
+              простой каталог, нет сложной логики доставки.</p>
+            <p><strong>Компромисс:</strong> ежемесячная плата 29$ + комиссия с продаж,
+              ограниченная кастомизация оформления.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Кейс 2: WooCommerce -->
+      <section id="case-wc" style="margin-top: 2rem;">
+        <div class="nes-container is-rounded with-title" style="background-color: #e8f5e9;">
+          <p class="title">Кейс 2 — WooCommerce</p>
+          <h2>Магазин электроники «Voltnest»</h2>
+          <span class="nes-badge is-primary"><span class="dark">WooCommerce</span></span>
+          <span class="nes-badge is-success"><span class="dark">500+ товаров</span></span>
+
+          <p style="margin-top: 1rem;">
+            Voltnest — интернет‑магазин аксессуаров для умного дома. На старте
+            500 товаров, сложная система фильтров по характеристикам (мощность,
+            протокол, бренд), интеграция со складской программой 1С и службой
+            доставки СДЭК. В команде один фронтенд‑разработчик и один WordPress‑администратор.
+          </p>
+          <p>
+            Выбрали WooCommerce на WordPress: бесплатное ядро, полный контроль
+            над кодом и шаблонами. Хостинг на VPS за 15 долларов в месяц, SSL
+            от Let's Encrypt, кэширование через LiteSpeed Cache. Плагин WooCommerce
+            XML‑CSV Product Import подключил синхронизацию с 1С. Доставка и оплата
+            настраивались через официальные плагины СДЭК и ЮKassa. На запуск ушло
+            два месяца, но дальнейшие доработки обходятся дешевле, чем на Shopify.
+          </p>
+
+          <div class="nes-container is-semi" style="margin-top: 1rem; background-color: #fff;">
+            <p><strong>Почему WooCommerce:</strong> нужна интеграция с 1С, сложные
+              фильтры, полный контроль над кодом, нет ежемесячной платы за платформу.</p>
+            <p><strong>Компромисс:</strong> самостоятельная настройка хостинга, SSL,
+              кэширования и обновлений. Выше нагрузка на разработчика.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Кейс 3: Magento -->
+      <section id="case-magento" style="margin-top: 2rem;">
+        <div class="nes-container is-rounded with-title" style="background-color: #faf7f0;">
+          <p class="title">Кейс 3 — Magento</p>
+          <h2>Мультибрендовый fashion‑магазин «Lumora»</h2>
+          <span class="nes-badge is-primary"><span class="dark">Magento</span></span>
+          <span class="nes-badge is-success"><span class="dark">10 000+ SKU</span></span>
+
+          <p style="margin-top: 1rem;">
+            Lumora — крупный fashion‑ретейлер с тремя брендами на одном движке,
+            каталогом более 10 000 артикулов, мультиязычностью (русский, казахский,
+            узбекский) и интеграцией с ERP‑системой. Товары разделены по витринам,
+            но склад и заказы общие. В команде — три разработчика и технический
+            директор.
+          </p>
+          <p>
+            В этом проекте мы делали кейс на Magento Open Source: полная
+            кастомизация фронтенда, headless‑архитектура с Vue.js на витрине,
+            GraphQL API для общения с ядром. Varnish Full Page Cache сократил
+            время загрузки с 4 секунд до 0,8. Интеграция с ERP через RabbitMQ:
+            товары, цены и остатки синхронизируются в реальном времени.
+            Запуск занял семь месяцев и потребовал выделенного сервера за 150
+            долларов в месяц. Но результат — единая платформа, которая тянет
+            пиковую нагрузку в «Чёрную пятницу» (8 000 заказов в день) без
+            падений и задержек.
+          </p>
+
+          <div class="nes-container is-semi" style="margin-top: 1rem; background-color: #fff;">
+            <p><strong>Почему Magento:</strong> мультибрендовая архитектура, 10 000+
+              товаров, headless‑фронтенд, интеграция с ERP, мультиязычность,
+              пиковые нагрузки.</p>
+            <p><strong>Компромисс:</strong> длительный запуск (7 месяцев), дорогой
+              хостинг, необходимость постоянной команды разработчиков.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Сводка -->
+      <section id="summary" style="margin-top: 2rem;">
+        <h2>Что общего у всех трёх кейсов</h2>
+        <p>
+          Во всех случаях выбор платформы определялся не «что популярнее», а
+          конкретными условиями: размером каталога, наличием разработчиков,
+          бюджетом и требованиями к интеграциям. Shopify идеален для быстрого
+          старта без технической команды. WooCommerce даёт максимум гибкости
+          за минимальные деньги, если есть хотя бы один разработчик. Magento —
+          выбор для крупного бизнеса со сложной логикой и готовностью вкладывать
+          ресурсы в инфраструктуру.
+        </p>
+        <p>
+          Главное правило, которое подтверждает каждый кейс: не существует
+          «лучшей» CMS — существует CMS, которая лучше всего подходит для
+          конкретной задачи и команды.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="nes-container is-centered footer-main">
+    <p>&copy; 2026 CMS E‑Commerce.</p>
+    <p>Контакты:</p>
+    <!-- gmail -->
+    <p><i class="nes-icon gmail is-large"></i>
+      kravchenko.polina@icloud.com </p>
+    <!-- github -->
+    <p><i class="nes-icon github is-large"></i> @plnrslnvn</p>
+  </footer>
+
+  <script src="jsmain.js"></script>
+</body>
+
+</html>

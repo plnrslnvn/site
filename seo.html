@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS в электронной коммерции</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Подключаем NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- мой css -->
+  <link rel="stylesheet" href="csscustom.css">
+</head>
+
+<body>
+  <header class="nes-container is-centered header-main">
+    <div class="header-main__logo nes-logo">
+      <span>CMS в электронной коммерции</span>
+    </div>
+
+    <nav class="nes-menu header-main__nav">
+      <button class="nes-menu-icon" aria-label="Открыть меню">
+        <span class="burger-lines">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+
+      <ul class="nes-menu-content header-main__links">
+        <li><a href="index.html" class="nes-btn is-normal">Главная</a></li>
+        <li><a href="woocommerce.html" class="nes-btn is-primary">WooCommerce</a></li>
+        <li><a href="shopify.html" class="nes-btn is-success">Shopify</a></li>
+        <li><a href="magento.html" class="nes-btn is-warning">Magento</a></li>
+        <li><a href="cms.html" class="nes-btn is-normal">Сравнение CMS</a></li>
+        <li><a href="security.html" class="nes-btn is-error">Безопасность</a></li>
+        <li><a href="seo.html" class="nes-btn is-primary">SEO и скорость загрузки</a></li>
+        <li><a href="case.html" class="nes-btn is-success">Кейсы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout-wrapper">
+    <!-- Сайдбар -->
+    <aside class="sidebar" aria-label="Навигация по странице">
+      <section class="sidebar__section">
+        <h3>Содержание страницы</h3>
+        <ul class="nes-list is-bulleted">
+          <li><a href="#intro">SEO и скорость загрузки</a></li>
+          <li><a href="#vitals">Core Web Vitals</a></li>
+          <li><a href="#scores">Оценка SEO-возможностей</a></li>
+          <li><a href="#urls">Индексация и структура URL</a></li>
+          <li><a href="#sitemap">Карты сайта и robots.txt</a></li>
+          <li><a href="#meta">Мета-теги и структурированные данные</a></li>
+          <li><a href="#improve">Улучшение скорости</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="nes-container is-rounded">
+      <h1 id="intro">SEO и скорость загрузки: сравнение по метрикам</h1>
+
+      <p>
+        Скорость загрузки и техническое SEO напрямую влияют на конверсию и позиции
+        в поисковой выдаче. Google с 2021 года учитывает Core Web Vitals при ранжировании,
+        а пользователи уходят с сайта, если страница грузится дольше трёх секунд.
+        Каждая CMS по‑разному справляется с этими задачами, и разница между платформами
+        бывает существенной — особенно между SaaS‑решением вроде Shopify и
+        самостоятельной установкой WooCommerce или Magento.
+      </p>
+
+      <h2 id="vitals">Core Web Vitals: что измеряют и зачем</h2>
+
+      <p>
+        Core Web Vitals — это три ключевых метрики скорости и стабильности страницы.
+        LCP (Largest Contentful Paint) показывает, через сколько миллисекунд
+        загружается самый крупный видимый элемент — обычно баннер или главное
+        изображение товара. FID (First Input Delay) измеряет задержку между
+        моментом, когда пользователь впервые взаимодействует со страницей (клик,
+        тап), и моментом, когда браузер начинает обрабатывать это действие. CLS
+        (Cumulative Layout Shift) оценивает, насколько элементы «прыгают» по экрану
+        во время загрузки — например, когда картинка подтягивается позже текста
+        и сдвигает весь контент вниз. Все три метрики измеряются в лаборатории
+        (через Lighthouse) и в поле (через реальных пользователей Chrome).
+      </p>
+
+      <h2>Сравнение платформ по Core Web Vitals</h2>
+
+      <div class="nes-table-responsive">
+        <table class="nes-table is-bordered cms-comparison-table">
+          <thead>
+            <tr>
+              <th>Метрика</th>
+              <th>Shopify</th>
+              <th>WooCommerce</th>
+              <th>Magento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LCP (хорошо до 2,5 с)</td>
+              <td>1,5–2,2 с</td>
+              <td>2,0–4,5 с</td>
+              <td>1,8–3,5 с</td>
+            </tr>
+            <tr>
+              <td>FID (хорошо до 100 мс)</td>
+              <td>20–60 мс</td>
+              <td>80–200 мс</td>
+              <td>50–150 мс</td>
+            </tr>
+            <tr>
+              <td>CLS (хорошо до 0,1)</td>
+              <td>0,02–0,08</td>
+              <td>0,05–0,25</td>
+              <td>0,03–0,15</td>
+            </tr>
+            <tr>
+              <td>Время до интерактивности</td>
+              <td>Быстро</td>
+              <td>Зависит от хостинга</td>
+              <td>Зависит от сервера и кэша</td>
+            </tr>
+            <tr>
+              <td>Кэширование из коробки</td>
+              <td>Встроено (CDN)</td>
+              <td>Через плагины</td>
+              <td>Через конфигурацию</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Цифры в таблице — усреднённые значения для типичных магазинов без глубокой
+        оптимизации. Хорошо настроенный WooCommerce на выделенном сервере с
+        кэшированием и CDN может обойти плохо настроенный Shopify по LCP, но это
+        требует технических знаний и постоянного внимания. Magento при правильной
+        настройке Varnish и Full Page Cache работает быстро, но базовая установка
+        без кэширования грузится 4–6 секунд, что критично.
+      </p>
+
+      <h2 id="scores">Оценка SEO‑возможностей по платформам</h2>
+
+      <p>
+        <span class="nes-text">Shopify — базовое SEO из коробки</span>
+      </p>
+      <div class="nes-progress progress-shopify">
+        <progress class="nes-progress is-primary" value="85" max="100"></progress>
+      </div>
+
+      <p>
+        <span class="nes-text">WooCommerce — гибкость через плагины</span>
+      </p>
+      <div class="nes-progress progress-woocommerce">
+        <progress class="nes-progress is-success" value="85" max="100"></progress>
+      </div>
+
+      <p>
+        <span class="nes-text">Magento — максимум при правильной настройке</span>
+      </p>
+      <div class="nes-progress progress-magento">
+        <progress class="nes-progress is-warning" value="80" max="100"></progress>
+      </div>
+
+      <h2 id="urls">Индексация и структура URL</h2>
+
+      <p>
+        Чистые URL (ЧПУ — человекопонятные урлы) — основа технического SEO. Shopify
+        генерирует их автоматически: `mysite.com/products/t-shirt`. Структуру
+        нельзя изменить, но она логична и поисковики её понимают. WooCommerce
+        требует настройки через Permalinks: нужно выбрать «Название записи»
+        и убедиться, что префикс `/product/` не дублируется в категориях.
+        Magento даёт полную свободу: можно настроить суффиксы (.html или без),
+        канонические теги для категорий и товаров, URL‑ключи для каждого
+        товара вручную. Но с этой свободой приходит ответственность — одна
+        ошибка в настройке создаст дубли страниц, которые поисковики
+        воспримут как каннибализацию выдачи.
+      </p>
+
+      <h2 id="sitemap">Карты сайта и robots.txt</h2>
+
+      <p>
+        XML‑карта сайта помогает поисковым роботам найти все страницы магазина.
+        Shopify генерирует sitemap.xml автоматически и обновляет при каждом
+        изменении каталога. WooCommerce требует плагин — Yoast SEO или Rank Math
+        берут эту задачу на себя и дополнительно создают отдельные карты
+        для товаров, категорий и изображений. Magento строит sitemap через
+        встроенный модуль, но нужно настроить генерацию по cron‑расписанию,
+        иначе карта устареет. Файл robots.txt в Shopify не редактируется
+        напрямую, но платформа сама закрывает служебные страницы. В WooCommerce
+        и Magento robots.txt полностью контролируется владельцем — можно
+        закрыть индексацию фильтров, сортировок и служебных дубликатов,
+        что особенно важно для крупных магазинов с тысячами страниц.
+      </p>
+
+      <h2 id="meta">Мета‑теги и структурированные данные</h2>
+
+      <p>
+        Title и meta description управляют тем, как страница выглядит в выдаче.
+        В WooCommerce плагины Yoast SEO и Rank Math дают полный контроль над
+        мета‑тегами для каждого товара, категории и страницы, поддерживают
+        шаблоны (переменные вроде %%sitename%%), превью в Google и Open Graph
+        для соцсетей. Shopify через встроенный редактор тем позволяет настроить
+        мета‑теги, но гибкость ограничена Liquid‑шаблонами — расширенные функции
+        доступны только через платёжные приложения. Magento поддерживает
+        структурированные данные schema.org для товаров, отзывов и хлебных
+        крошек прямо в ядре, что даёт расширенные сниппеты в Google без
+        дополнительных модулей. Rich snippets с ценой, наличием и рейтингом
+        повышают CTR на 20–30% — это подтверждено исследованиями Search Engine
+        Land и Backlinko.
+      </p>
+
+      <h2 id="improve">Что сделать прямо сейчас для улучшения скорости</h2>
+
+      <p>
+        Сжать все изображения товара до формата WebP — это уменьшает вес страницы
+        на 30–50% без потери качества. Включить ленивую загрузку (lazy loading)
+        для изображений ниже первого экрана. Настроить кэширование страниц:
+        для WooCommerce — WP Rocket или LiteSpeed Cache, для Magento —
+        Varnish Full Page Cache, для Shopify кэширование работает
+        автоматически через CDN. Минимизировать CSS и JavaScript, удалить
+        неиспользуемый код. Подключить CDN (Cloudflare, Fastly) для раздачи
+        статики. Уменьшить количество HTTP‑запросов: объединить CSS‑файлы,
+        убрать лишние шрифты. Проверить сайт через PageSpeed Insights и
+        Lighthouse — они покажут конкретные проблемы и приоритеты
+        исправления. Перепроверить через WebPageTest, потому что он даёт
+        более детальный водопад загрузки и показывает, какой ресурс
+        задерживает рендеринг.
+      </p>
+    </main>
+  </div>
+
+  <footer class="nes-container is-centered footer-main">
+    <p>&copy; 2026 CMS E‑Commerce.</p>
+    <p>Контакты:</p>
+    <!-- gmail -->
+    <p><i class="nes-icon gmail is-large"></i>
+      kravchenko.polina@icloud.com </p>
+    <!-- github -->
+    <p><i class="nes-icon github is-large"></i> @plnrslnvn</p>
+  </footer>
+
+  <script src="jsmain.js"></script>
+</body>
+
+</html>

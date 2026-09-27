@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS в электронной коммерции</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Подключаем NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- мой css -->
+  <link rel="stylesheet" href="csscustom.css">
+</head>
+
+<body>
+  <header class="nes-container is-centered header-main">
+    <div class="header-main__logo nes-logo">
+      <span>CMS в электронной коммерции</span>
+    </div>
+
+    <nav class="nes-menu header-main__nav">
+      <button class="nes-menu-icon" aria-label="Открыть меню">
+        <span class="burger-lines">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+
+      <ul class="nes-menu-content header-main__links">
+        <li><a href="index.html" class="nes-btn is-normal">Главная</a></li>
+        <li><a href="woocommerce.html" class="nes-btn is-primary">WooCommerce</a></li>
+        <li><a href="shopify.html" class="nes-btn is-success">Shopify</a></li>
+        <li><a href="magento.html" class="nes-btn is-warning">Magento</a></li>
+        <li><a href="cms.html" class="nes-btn is-normal">Сравнение CMS</a></li>
+        <li><a href="security.html" class="nes-btn is-error">Безопасность</a></li>
+        <li><a href="seo.html" class="nes-btn is-primary">SEO и скорость загрузки</a></li>
+        <li><a href="case.html" class="nes-btn is-success">Кейсы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout-wrapper">
+    <!-- Сайдбар -->
+    <aside class="sidebar" aria-label="Навигация по странице">
+      <section class="sidebar__section">
+        <h3>Содержание страницы</h3>
+        <ul class="nes-list is-bulleted">
+          <li><a href="#intro">Основные риски</a></li>
+          <li><a href="#plugins">Уязвимости плагинов</a></li>
+          <li><a href="#ssl">SSL и шифрование</a></li>
+          <li><a href="#backup">Резервное копирование</a></li>
+          <li><a href="#updates">Регулярные обновления</a></li>
+          <li><a href="#levels">Уровень защищённости</a></li>
+          <li><a href="#checklist">Чек-лист минимум</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="nes-container is-rounded">
+      <h1 id="intro">Безопасность и обновления: риски и как их закрывать</h1>
+
+      <p>
+        Безопасность интернет‑магазина — это не разовая настройка, а непрерывный процесс.
+        Каждая CMS решает этот вопрос по‑своему: Shopify берёт всю ответственность на себя,
+        WooCommerce и Magento оставляют большую часть задач владельцу и команде разработчиков.
+        Понимание того, где находятся уязвимости и как их закрывать, помогает не потерять
+        данные клиентов и доверие поисковых систем.
+      </p>
+
+      <h2 id="plugins">Уязвимости плагинов и расширений</h2>
+
+      <p>
+        Плагины — главный источник уязвимостей в WooCommerce и Magento. Каждый сторонний
+        модуль добавляет тысячи строк чужого кода, и автор не всегда успевает выпускать
+        патчи вовремя. Самые распространённые проблемы — SQL‑инъекции, XSS‑атаки,
+        обход аутентификации и загрузка вредоносных файлов через формы загрузки.
+        В Shopify эта угроза ниже, потому что приложения работают через API и не имеют
+        прямого доступа к серверу, но и там скомпрометированное приложение может
+        получить доступ к данным магазина через OAuth‑токены.
+      </p>
+
+      <p>
+        Правило простое: чем меньше плагинов — тем меньше поверхностей для атаки.
+        Перед установкой стоит проверять дату последнего обновления, рейтинг,
+        количество активных установок и наличие поддержки. Если плагин не обновлялся
+        больше года — его лучше заменить. На WooCommerce критически важно обновлять
+        WooCommerce Core, WordPress и все плагины безопасности, особенно Wordfence
+        или Sucuri. На Magento — обновлять ядро и патчи от Adobe, а также проверять
+        все модули из MageMarket и аналогичных площадок.
+      </p>
+
+      <h2 id="ssl">SSL и шифрование</h2>
+
+      <p>
+        SSL‑сертификат — базовое требование для любого интернет‑магазина. Без него
+        браузеры помечают сайт как небезопасный, поисковые системы понижают в выдаче,
+        а платёжные шлюзы просто не подключат. Shopify выдаёт бесплатный SSL
+        автоматически при привязке домена. В WooCommerce и Magento сертификат
+        нужно настроить вручную — либо через панель хостинга (Let's Encrypt), либо
+        через zakupk платного сертификата. Сертификат должен покрывать все поддомены,
+        которые использует магазин (например, api. и cdn.), и автоматически
+        продлеваться. Если SSL «протухнет», магазин может полностью перестать работать
+        в браузерах.
+      </p>
+
+      <h2 id="backup">Резервное копирование</h2>
+
+      <p>
+        Резервные копии — последний рубеж обороны. Если сайт взломают, база данных
+        повредится или хостинг упадёт, бэкап — это единственный способ восстановить
+        магазин за часы, а не за недели. В WooCommerce для этого подойдут плагины
+        UpdraftPlus или BackupBuddy — они умеют сохранять копии в облако
+        (Google Drive, Dropbox, S3) по расписанию. В Magento бэкапы настраиваются
+        через серверные скрипты (cron + mysqldump) или специализированные сервисы
+        вроде Snapshots. Хранить копии нужно вне сервера магазина — если бэкап
+        лежит на том же сервере, что и сайт, взлом уничтожит и его.
+      </p>
+
+      <h2 id="updates">Регулярные обновления</h2>
+
+      <p>
+        Обновления ядра, плагинов и тем закрывают известные уязвимости. Задержка
+        в неделю обычно безопасна, но откладывать на месяцы — это риск. В WooCommerce
+        можно включить автообновления для минорных версий, а мажорные ставить
+        вручную после проверки на тестовом окружении. В Magento обновления требуют
+        больше времени — нужно проверить совместимость кастомных модулей и темы,
+        поэтому крупные магазины проводят обновления по графику с откатным планом.
+        Shopify обновляется автоматически и незаметно для владельца, что снимает
+        эту задачу полностью.
+      </p>
+
+      <h2>Готовность платформ по уровню безопасности</h2>
+
+      <div class="nes-table-responsive">
+        <table class="nes-table is-bordered cms-comparison-table">
+          <thead>
+            <tr>
+              <th>Параметр</th>
+              <th>Shopify</th>
+              <th>WooCommerce</th>
+              <th>Magento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Управление SSL</td>
+              <td>Автоматически</td>
+              <td>Вручную</td>
+              <td>Вручную</td>
+            </tr>
+            <tr>
+              <td>Обновления ядра</td>
+              <td>Автоматически</td>
+              <td>Полуавтоматически</td>
+              <td>Вручную</td>
+            </tr>
+            <tr>
+              <td>Резервные копии</td>
+              <td>Встроены (частично)</td>
+              <td>Через плагины</td>
+              <td>Через сервер/сервисы</td>
+            </tr>
+            <tr>
+              <td>Риск уязвимостей плагинов</td>
+              <td>Низкий</td>
+              <td>Высокий</td>
+              <td>Средний</td>
+            </tr>
+            <tr>
+              <td>Ответственность за безопасность</td>
+              <td>Провайдер</td>
+              <td>Владелец</td>
+              <td>Команда разработки</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h1 id="levels">Уровень защищённости по платформам</h1>
+
+      <p>
+        <span class="nes-text">Shopify — защита «из коробки»</span>
+      </p>
+      <div class="nes-progress progress-shopify">
+        <progress class="nes-progress is-primary" value="95" max="100"></progress>
+      </div>
+
+      <p>
+        <span class="nes-text">Magento — при правильной настройке</span>
+      </p>
+      <div class="nes-progress progress-magento">
+        <progress class="nes-progress is-success" value="80" max="100"></progress>
+      </div>
+
+      <p>
+        <span class="nes-text">WooCommerce — зависит от плагинов</span>
+      </p>
+      <div class="nes-progress progress-woocommerce">
+        <progress class="nes-progress is-warning " value="65" max="100"></progress>
+      </div>
+
+      <h1 id="checklist">Чек‑лист минимум для любого магазина</h1>
+
+      <p>
+        Установить SSL‑сертификат и настроить редирект с HTTP на HTTPS. Включить
+        двухфакторную аутентификацию для администраторов. Настроить ежедневные
+        резервные копии базы данных и файлов с хранением вне сервера. Удалить
+        неиспользуемые плагины и темы. Обновить ядро CMS и все активные расширения
+        до последних стабильных версий. Установить фаервол уровня веб‑приложения
+        (WAF) — для WooCommerce это Wordfence или Sucuri, для Magento — Cloudflare
+        или Fastly WAF. Регулярно проверять логи на предмет подозрительной
+        активности и несанкционированных входов.
+      </p>
+    </main>
+  </div>
+
+  <footer class="nes-container is-centered footer-main">
+    <p>&copy; 2026 CMS E‑Commerce.</p>
+    <p>Контакты:</p>
+    <!-- gmail -->
+    <p><i class="nes-icon gmail is-large"></i>
+      kravchenko.polina@icloud.com </p>
+    <!-- github -->
+    <p><i class="nes-icon github is-large"></i> @plnrslnvn</p>
+  </footer>
+
+  <script src="jsmain.js"></script>
+</body>
+
+</html>

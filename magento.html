@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS в электронной коммерции</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Подключаем NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- мой css -->
+  <link rel="stylesheet" href="csscustom.css">
+</head>
+
+<body>
+  <header class="nes-container is-centered header-main">
+    <div class="header-main__logo nes-logo">
+      <span>CMS в электронной коммерции</span>
+    </div>
+
+    <nav class="nes-menu header-main__nav">
+      <button class="nes-menu-icon" aria-label="Открыть меню">
+        <span class="burger-lines">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+
+      <ul class="nes-menu-content header-main__links">
+        <li><a href="index.html" class="nes-btn is-normal">Главная</a></li>
+        <li><a href="woocommerce.html" class="nes-btn is-primary">WooCommerce</a></li>
+        <li><a href="shopify.html" class="nes-btn is-success">Shopify</a></li>
+        <li><a href="magento.html" class="nes-btn is-warning">Magento</a></li>
+        <li><a href="cms.html" class="nes-btn is-normal">Сравнение CMS</a></li>
+        <li><a href="security.html" class="nes-btn is-error">Безопасность</a></li>
+        <li><a href="seo.html" class="nes-btn is-primary">SEO и скорость загрузки</a></li>
+        <li><a href="case.html" class="nes-btn is-success">Кейсы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout-wrapper">
+    <!-- Сайдбар -->
+    <aside class="sidebar" aria-label="Навигация по странице">
+      <section class="sidebar__section">
+        <h3>Содержание страницы</h3>
+        <ul class="nes-list is-bulleted">
+          <li><a href="#description">Описание</a></li>
+          <li><a href="#target">Для кого подходит</a></li>
+          <li><a href="#pros">Преимущества</a></li>
+        </ul>
+      </section>
+    </aside>
+    <!-- Основной контент -->
+    <main class="main-content nes-container">
+      <section class="cms-overview">
+        <div class="cms-overview-wrapper">
+          <div class="cms-overview-text">
+            <h1>Magento</h1>
+            <h2 id="description">Описание</h2>
+            <p>Magento (ныне Adobe Commerce) — это enterprise‑платформа для электронной коммерции, отличающаяся высокой
+              гибкостью и масштабируемостью. Платформа представлена в двух версиях: Magento Open Source (бесплатная,
+              рассчитана на малый и средний бизнес при наличии технических ресурсов) и Adobe Commerce (платная, включает
+              AI‑инструменты, расширенный B2B‑функционал, облачный хостинг и enterprise‑поддержку). Архитектура системы
+              изначально ориентирована на сложные бизнес‑сценарии: она поддерживает мультисторовые конфигурации,
+              кастомные правила ценообразования, глубокую интеграцию с ERP‑ и CRM‑системами, а также обработку крупных
+              каталогов — в том числе с более чем 200 000 товаров.</p>
+            <h2 id="target">Для кого подходит</h2>
+            <p>Платформа оптимальна для среднего и крупного бизнеса, которому требуется глубокая кастомизация витрины,
+              логики корзины и промомеханик. Особенно актуальна для мультибрендовых и мультирегиональных магазинов:
+              единый бэкенд позволяет управлять несколькими витринами с разными доменами, языками, валютами и
+              индивидуальными правилами цен. В сегменте B2B (преимущественно в Adobe Commerce) решение востребовано
+              благодаря функционалу персональных прайс‑листов, личных кабинетов, квот и заказов по договору. Magento
+              рассчитана на проекты с выделенной IT‑командой или привлечением подрядчиков: из‑за технической сложности
+              платформы и необходимости владения навыками работы с PHP и экосистемой Magento самостоятельная настройка и
+              доработки без профильной экспертизы затруднены.</p>
+            <h2 id="pros">Преимущества</h2>
+            <p>К ключевым преимуществам Magento относятся масштабируемость и способность стабильно работать с большими
+              объёмами данных и высокой нагрузкой, а также поддержка вариативных атрибутов и сложных сценариев скидок —
+              это критично для магазинов с широкой и детализированной номенклатурой. Платформа предлагает развитые
+              инструменты аналитики и отчётности для контроля ключевых метрик и принятия управленческих решений. Важным
+              плюсом служит обширная экосистема расширений и шаблонов, позволяющая наращивать функционал под
+              специфические задачи бизнеса. Дополнительно ценность решения повышают встроенные SEO‑инструменты и
+              адаптивный дизайн, обеспечивающие хорошую видимость в поиске и комфортный пользовательский опыт на любых
+              устройствах. Гибкость двух версий (Open Source и Adobe Commerce) даёт возможность подобрать оптимальный
+              вариант с учётом специфики проекта, объёма задач и доступного бюджета на разработку и сопровождение.</p>
+          </div>
+          <div class="cms-overview-img">
+            <img src="assets/magento-sm.jpeg"
+              srcset="assets/magento-sm.jpeg 480w, assets/magento-md.jpeg 768w, assets/magento-lg.jpeg 1200w"
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" alt="Интерфейс Magento" title="Magento">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="nes-container is-centered footer-main">
+    <p>&copy; 2026 CMS E‑Commerce.</p>
+    <p>Контакты:</p>
+    <!-- gmail -->
+    <p><i class="nes-icon gmail is-large"></i>
+      kravchenko.polina@icloud.com </p>
+    <!-- github -->
+    <p><i class="nes-icon github is-large"></i> @plnrslnvn</p>
+  </footer>
+
+  <script src="jsmain.js"></script>
+</body>
+
+</html>

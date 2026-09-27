@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS в электронной коммерции</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Подключаем NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- мой css -->
+  <link rel="stylesheet" href="csscustom.css">
+</head>
+
+<body>
+  <header class="nes-container is-centered header-main">
+    <div class="header-main__logo nes-logo">
+      <span>CMS в электронной коммерции</span>
+    </div>
+
+    <nav class="nes-menu header-main__nav">
+      <button class="nes-menu-icon" aria-label="Открыть меню">
+        <span class="burger-lines">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+
+      <ul class="nes-menu-content header-main__links">
+        <li><a href="index.html" class="nes-btn is-normal">Главная</a></li>
+        <li><a href="woocommerce.html" class="nes-btn is-primary">WooCommerce</a></li>
+        <li><a href="shopify.html" class="nes-btn is-success">Shopify</a></li>
+        <li><a href="magento.html" class="nes-btn is-warning">Magento</a></li>
+        <li><a href="cms.html" class="nes-btn is-normal">Сравнение CMS</a></li>
+        <li><a href="security.html" class="nes-btn is-error">Безопасность</a></li>
+        <li><a href="seo.html" class="nes-btn is-primary">SEO и скорость загрузки</a></li>
+        <li><a href="case.html" class="nes-btn is-success">Кейсы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout-wrapper">
+    <!-- Сайдбар -->
+    <aside class="sidebar" aria-label="Навигация по странице">
+      <section class="sidebar__section">
+        <h3>Содержание страницы</h3>
+        <ul class="nes-list is-bulleted">
+          <li><a href="#description">Описание</a></li>
+          <li><a href="#target">Для кого подходит</a></li>
+          <li><a href="#pros">Преимущества</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="main-content nes-container">
+      <section class="cms-overview">
+        <div class="cms-overview-wrapper">
+          <div class="cms-overview-text">
+            <h1>Shopify</h1>
+            <h2 id="description">Описание</h2>
+            <p>Shopify — это облачная e-commerce-платформа, которая берёт на себя хостинг, безопасность, обновления и
+              инфраструктуру. Вы не управляете серверами и не думаете о патчах — Shopify делает всё за вас. Магазин
+              можно запустить за 1–2 часа. App Store содержит более 8000 приложений для маркетинга, аналитики, доставки
+              и автоматизации. </p>
+            <h2 id="target">Для кого подходит</h2>
+            <p>Shopify оптимально подходит предпринимателям и командам, которым важен быстрый запуск интернет‑магазина
+              без глубокой технической настройки: платформа станет хорошим выбором для малого и среднего бизнеса,
+              стартапов, а также для владельцев брендов, ориентированных на прямые продажи и масштабирование через
+              маркетплейсы. Решение особенно удобно для маркетологов и менеджеров, которым нужно оперативно тестировать
+              гипотезы и запускать рекламные кампании, — благодаря встроенным инструментам аналитики, платёжным решениям
+              и интеграции с социальными сетями. Для B2B‑компаний с 2024 года расширены возможности в тарифе Shopify
+              Plus: поддержка корпоративных аккаунтов, индивидуальных цен и B2B‑каталогов делает платформу подходящей и
+              для работы с оптовыми клиентами. Кроме того, AI‑инструменты Shopify Magic и AI Store Builder будут полезны
+              тем, кто хочет автоматизировать рутину — генерацию описаний товаров, копирайтинг и оформление витрин — и
+              быстрее выводить продукты на рынок.</p>
+            <h2 id="pros">Преимущества</h2>
+            <p>Shopify сочетает в себе простоту и надёжность: встроенный drag-and-drop редактор тем позволяет создавать
+              магазин без навыков программирования, а безопасность реализована по умолчанию — все магазины соответствуют
+              стандарту PCI DSS Level 1 и используют 256‑битное SSL‑шифрование на каждой странице. Платформа отличается
+              высокой скоростью работы благодаря оптимизированной инфраструктуре, которая обеспечивает стабильно высокие
+              показатели в Google Lighthouse уже «из коробки». С 2024 года расширены возможности для B2B‑сегмента в
+              Shopify Plus: доступны B2B‑каталоги, корпоративные аккаунты и настройка индивидуальных цен. Кроме того, в
+              экосистеме представлены AI‑инструменты — Shopify Magic и AI Store Builder, которые помогают
+              автоматизировать создание описаний товаров, разрабатывать дизайн и готовить маркетинговые тексты</p>
+          </div>
+          <div class="cms-overview-img">
+            <img src="assets/shopify-sm.jpeg"
+              srcset="assets/shopify-sm.jpeg 480w, assets/shopify-md.jpeg 768w, assets/shopify-lg.jpeg 1200w"
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" alt="Интерфейс Shopify" title="Shopify">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="nes-container is-centered footer-main">
+    <p>&copy; 2026 CMS E‑Commerce.</p>
+    <p>Контакты:</p>
+    <!-- gmail -->
+    <p><i class="nes-icon gmail is-large"></i>
+      kravchenko.polina@icloud.com </p>
+    <!-- github -->
+    <p><i class="nes-icon github is-large"></i> @plnrslnvn</p>
+  </footer>
+
+  <script src="jsmain.js"></script>
+</body>
+
+</html>

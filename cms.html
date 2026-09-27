@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS в электронной коммерции</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Подключаем NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- мой css -->
+  <link rel="stylesheet" href="csscustom.css">
+</head>
+
+<body>
+  <header class="nes-container is-centered header-main">
+    <div class="header-main__logo nes-logo">
+      <span>CMS в электронной коммерции</span>
+    </div>
+
+    <nav class="nes-menu header-main__nav">
+      <button class="nes-menu-icon" aria-label="Открыть меню">
+        <span class="burger-lines">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+
+      <ul class="nes-menu-content header-main__links">
+        <li><a href="index.html" class="nes-btn is-normal">Главная</a></li>
+        <li><a href="woocommerce.html" class="nes-btn is-primary">WooCommerce</a></li>
+        <li><a href="shopify.html" class="nes-btn is-success">Shopify</a></li>
+        <li><a href="magento.html" class="nes-btn is-warning">Magento</a></li>
+        <li><a href="cms.html" class="nes-btn is-normal">Сравнение CMS</a></li>
+        <li><a href="security.html" class="nes-btn is-error">Безопасность</a></li>
+        <li><a href="seo.html" class="nes-btn is-primary">SEO и скорость загрузки</a></li>
+        <li><a href="case.html" class="nes-btn is-success">Кейсы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout-wrapper">
+    <!-- Сайдбар -->
+    <aside class="sidebar" aria-label="Навигация по странице">
+      <section class="sidebar__section">
+        <h3>Содержание страницы</h3>
+        <ul class="nes-list is-bulleted">
+          <li><a href="#comparison">Сравнение CMS</a></li>
+          <li><a href="#video">Видео-обзор</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="nes-container is-rounded">
+      <h1 id="comparison" class="nes-title is-center">Сравнение CMS для электронной коммерции</h1>
+
+      <div class="nes-table-responsive">
+        <table class="nes-table is-bordered cms-comparison-table">
+          <thead>
+            <tr>
+              <th>Характеристика</th>
+              <th>Shopify</th>
+              <th>Magento (Adobe Commerce)</th>
+              <th>WooCommerce</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Тип решения</td>
+              <td>SaaS-платформа (облачная)</td>
+              <td>Самостоятельная платформа (Open Source / Enterprise)</td>
+              <td>Плагин для WordPress (Open Source)</td>
+            </tr>
+            <tr>
+              <td>Для кого подходит</td>
+              <td>Начинающие предприниматели, маркетологи, быстрый запуск</td>
+              <td>Крупный бизнес, мультирегиональные магазины, сложные сценарии</td>
+              <td>Малый и средний бизнес, команды с веб‑разработчиком</td>
+            </tr>
+            <tr>
+              <td>Стоимость</td>
+              <td>$19–$299+/мес (тарифы + транзакции)</td>
+              <td>Magento Open Source — бесплатно; Adobe Commerce — по запросу</td>
+              <td>Бесплатно (платные темы/плагины/хостинг отдельно)</td>
+            </tr>
+            <tr>
+              <td>Требования к инфраструктуре</td>
+              <td>Не требуются (всё в облаке)</td>
+              <td>Мощный сервер/кластер, CDN, квалифицированная команда</td>
+              <td>Хостинг c PHP, MySQL, WordPress</td>
+            </tr>
+            <tr>
+              <td>Гибкость и кастомизация</td>
+              <td>Ограниченная (темы, приложения, Liquid)</td>
+              <td>Максимальная (полная свобода, сложная разработка)</td>
+              <td>Высокая (через код и плагины)</td>
+            </tr>
+            <tr>
+              <td>Масштабируемость</td>
+              <td>Хорошая «из коробки»</td>
+              <td>Отличная, рассчитана на большие нагрузки</td>
+              <td>Средняя (зависит от хостинга и оптимизации)</td>
+            </tr>
+            <tr>
+              <td>Интеграции и экосистема</td>
+              <td>App Store, готовые интеграции</td>
+              <td>Глубокие интеграции, API, B2B, ERP/CRM</td>
+              <td>Огромная библиотека плагинов и тем</td>
+            </tr>
+            <tr>
+              <td>Безопасность</td>
+              <td>Обеспечивает провайдер</td>
+              <td>Требует профессиональной настройки и поддержки</td>
+              <td>Зависит от хостинга, обновлений, плагинов</td>
+            </tr>
+            <tr>
+              <td>SEO и производительность</td>
+              <td>Сильные базовые возможности</td>
+              <td>Максимальные возможности, но требует экспертизы</td>
+              <td>Хорошие возможности при правильной настройке</td>
+            </tr>
+            <tr>
+              <td>Поддержка и сообщество</td>
+              <td>Штатная поддержка, база знаний</td>
+              <td>Enterprise‑поддержка (Adobe), активное сообщество Open Source</td>
+              <td>Большое сообщество, много документации</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="comparison-img">
+        <img src="assets/c.jpeg" srcset="assets/c.jpeg 480w, assets/c2.jpeg 768w, assets/c3.jpeg 1200w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+          alt="Сравнение CMS: Shopify, Magento, WooCommerce" />
+      </div>
+
+      <!-- Блок с видео -->
+      <section id="video" class="video-block">
+        <h2>Что лучше: WooCommerce или Shopify?</h2>
+        <div class="video-embed">
+          <iframe src="https://rutube.ru/play/embed/7e7b979aa3a12d713dabb5784ba8835e/" frameborder="0" allowfullscreen
+            title="Обзор CMS для интернет‑магазинов">
+          </iframe>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="nes-container is-centered footer-main">
+    <p>&copy; 2026 CMS E‑Commerce.</p>
+    <p>Контакты:</p>
+    <!-- gmail -->
+    <p><i class="nes-icon gmail is-large"></i>
+      kravchenko.polina@icloud.com </p>
+    <!-- github -->
+    <p><i class="nes-icon github is-large"></i> @plnrslnvn</p>
+  </footer>
+
+  <script src="jsmain.js"></script>
+</body>
+
+</html>

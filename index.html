@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS в электронной коммерции</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Подключаем NES.css -->
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- мой css -->
+  <link rel="stylesheet" href="csscustom.css">
+</head>
+
+<body>
+  <header class="nes-container is-centered header-main">
+    <div class="header-main__logo nes-logo">
+      <span>CMS в электронной коммерции</span>
+    </div>
+
+    <nav class="nes-menu header-main__nav">
+      <button class="nes-menu-icon" aria-label="Открыть меню">
+        <span class="burger-lines">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </span>
+      </button>
+
+      <ul class="nes-menu-content header-main__links">
+        <li><a href="index.html" class="nes-btn is-normal">Главная</a></li>
+        <li><a href="woocommerce.html" class="nes-btn is-primary">WooCommerce</a></li>
+        <li><a href="shopify.html" class="nes-btn is-success">Shopify</a></li>
+        <li><a href="magento.html" class="nes-btn is-warning">Magento</a></li>
+        <li><a href="cms.html" class="nes-btn is-normal">Сравнение CMS</a></li>
+        <li><a href="security.html" class="nes-btn is-error">Безопасность</a></li>
+        <li><a href="seo.html" class="nes-btn is-primary">SEO и скорость загрузки</a></li>
+        <li><a href="case.html" class="nes-btn is-success">Кейсы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="layout-wrapper">
+    <!-- Сайдбар -->
+    <aside class="sidebar" aria-label="Навигация по странице">
+      <section class="sidebar__section">
+        <h3>Содержание страницы</h3>
+        <ul class="nes-list is-bulleted">
+          <li><a href="#overview">Обзор CMS для e-commerce</a></li>
+          <li><a href="#woocommerce">WooCommerce</a></li>
+          <li><a href="#shopify">Shopify</a></li>
+          <li><a href="#magento">Magento</a></li>
+          <li><a href="#cards">Сравнение платформ</a></li>
+        </ul>
+      </section>
+
+      <section class="sidebar__section">
+        <h3>Подписка</h3>
+        <form class="nes-form sidebar__form" action="/subscribe" method="post">
+          <div class="nes-field is-inline">
+            <label for="email" class="nes-label">Email</label>
+            <input id="email" type="email" name="email" placeholder="example@mail.com" class="nes-input" required />
+          </div>
+          <button type="submit" class="nes-btn is-primary">Подписаться</button>
+        </form>
+      </section>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="main-content nes-container">
+      <section id="overview" class="overview overview--cms">
+        <div class="overview__wrapper">
+          <div class="overview__text">
+            <h1>Обзор CMS для e-commerce: WooCommerce, Shopify и Magento</h1>
+            <p>Выбор платформы для интернет-магазина — это решение, которое определяет развитие бизнеса на годы вперёд.
+            </p>
+            <p>Три системы доминируют на рынке:</p>
+
+            <p id="woocommerce">
+              <strong>WooCommerce</strong> — плагин для WordPress, который превращает сайт в полноценный магазин и
+              контролирует около 33% всех онлайн-витрин в мире.
+            </p>
+
+            <p id="shopify">
+              <strong>Shopify</strong> — облачная SaaS-платформа, на которой работает около 20% магазинов и которая
+              обеспечивает самый быстрый запуск.
+            </p>
+
+            <p id="magento">
+              <strong>Magento</strong> (он же Adobe Commerce) — тяжёлая, но бескомпромиссно гибкая платформа для
+              крупного бизнеса, на которой работают менее 1% магазинов по количеству, но входящие в топ-3 по обороту
+              среди крупных магазинов.
+            </p>
+
+            <p>
+              Каждая платформа занимает свою нишу. WooCommerce идеален для контент-ориентированных магазинов, блогеров и
+              тех, кто уже работает на WordPress — он бесплатен, гибок, но требует самостоятельного хостинга, обновлений
+              и заботы о безопасности. Shopify — для тех, кому нужен быстрый старт без технической головной боли:
+              хостинг, SSL, обновления и безопасность включены в подписку, но за комфорт приходится платить ежемесячными
+              платежами и комиссиями с транзакций. Magento — выбор предприятий с тысячами товаров, мультисторовыми
+              конфигурациями и B2B-потребностями: неограниченная кастомизация, но нужна команда разработчиков и
+              серьёзная серверная инфраструктура.
+            </p>
+          </div>
+
+          <div class="overview__img">
+            <img src="assets/cms1.png" srcset="assets/cms1.png 480w, assets/cms2.png 768w, assets/cms3.png 1200w"
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+              alt="Обзор CMS: WooCommerce, Shopify, Magento" title="Обзор CMS" />
+          </div>
+        </div>
+      </section>
+
+      <div id="cards" class="cards-grid">
+        <article class="nes-card card--woo">
+          <div class="nes-card-content">
+            <h2>WooCommerce</h2>
+            <p>
+              Полный контроль, бесплатное ядро, тысячи плагинов и тем, отличный SEO, но требует технических знаний,
+              регулярного обслуживания, а расходы на хостинг и платные расширения растут вместе с магазином.
+            </p>
+            <a href="woocommerce.html" class="nes-btn is-primary">Подробнее о WooCommerce</a>
+          </div>
+        </article>
+
+        <article class="nes-card card--shopify">
+          <div class="nes-card-content">
+            <h2>Shopify</h2>
+            <p>
+              Готовое SaaS‑решение. Быстрая настройка, встроенные платежи и аналитика, удобно для старта без технических
+              навыков.
+            </p>
+            <a href="shopify.html" class="nes-btn is-success">Подробнее о Shopify</a>
+          </div>
+        </article>
+
+        <article class="nes-card card--magento">
+          <div class="nes-card-content">
+            <h2>Magento</h2>
+            <p>
+              Мощная платформа для крупных магазинов. Высокая масштабируемость, широкие возможности кастомизации и
+              интеграции.
+            </p>
+            <a href="magento.html" class="nes-btn is-warning">Подробнее о Magento</a>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <footer class="nes-container is-centered footer-main">
+    <p>&copy; 2026 CMS E‑Commerce.</p>
+    <p>Контакты:</p>
+    <!-- gmail -->
+    <p><i class="nes-icon gmail is-large"></i>
+      kravchenko.polina@icloud.com </p>
+    <!-- github -->
+    <p><i class="nes-icon github is-large"></i> @plnrslnvn</p>
+  </footer>
+
+  <script src="jsmain.js"></script>
+</body>
+
+</html>
